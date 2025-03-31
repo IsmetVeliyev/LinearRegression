@@ -53,7 +53,7 @@ def Prediction(area,bedrooms,grd):
 
         return hParamaters[0]*area + hParamaters[1]*bedrooms + hParamaters[2]
 
-df: pd.DataFrame = pd.read_csv("C:\\Users\\user\\Desktop\\Gradient\\House Price Prediction Dataset.csv")
+df: pd.DataFrame = pd.read_csv("House Price Prediction Dataset.csv")
 grd=GradientDescent(df,'Area','Bedrooms','Price')
 print("price:   "+str(Prediction(1360,5,grd)))
 
